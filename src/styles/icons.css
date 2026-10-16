@@ -1,0 +1,16 @@
+@font-face{font-family:StudioIcons;src:url(/media/icons.woff) format("woff");font-display:block}.mdi::before{font-family:StudioIcons!important;font-style:normal;font-weight:normal;font-size:inherit;line-height:1;display:inline-block}
+.mdi-stop::before{content:"\F04DB"}
+.mdi-home-heart::before{content:"\F0827"}
+.mdi-restore::before{content:"\F099B"}
+.mdi-hand-wave-outline::before{content:"\F1822"}
+.mdi-message-outline::before{content:"\F0365"}
+.mdi-pause::before{content:"\F03E4"}
+.mdi-palette-outline::before{content:"\F0E0C"}
+.mdi-play::before{content:"\F040A"}
+.mdi-human::before{content:"\F02E6"}
+.mdi-home-outline::before{content:"\F06A1"}
+.mdi-whatsapp::before{content:"\F05A3"}
+.mdi-close::before{content:"\F0156"}
+.mdi-account-voice::before{content:"\F05CB"}
+.mdi-format-list-bulleted::before{content:"\F0279"}
+.mdi-menu::before{content:"\F035C"}

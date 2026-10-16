@@ -1,0 +1,7 @@
+<script setup>
+import {ref,inject} from 'vue'
+import ModalShell from './ModalShell.vue'
+import {siteConfig as c} from '../config/siteConfig'
+const open=ref(false),book=inject('book');const links=[['inicio','Início'],['sobre','Sobre'],['servicos','Serviços'],['portfolio','Resultados'],['combos','Combos'],['localizacao','Localização'],['contato','Contato']]
+</script>
+<template><header class="site-header"><a class="brand" href="/#inicio" aria-label="Luiza Rais Nails — início"><span class="brand-mark">{{c.brand.initials}}</span><span>Luiza Rais<small>NAILS • A DOMICÍLIO</small></span></a><nav class="desktop-nav" aria-label="Navegação principal"><a v-for="[id,label] in links" :key="id" :href="`/#${id}`">{{label}}</a></nav><button class="button header-book" @click="book()">Agendar <span>↗</span></button><button class="menu-button" aria-label="Abrir menu" :aria-expanded="open" @click="open=true"><i class="mdi mdi-menu" aria-hidden="true"></i></button></header><ModalShell v-if="open" label="Menu de navegação" @close="open=false"><p class="eyebrow">Luiza Rais Nails</p><nav class="mobile-nav" aria-label="Navegação no celular"><a v-for="[id,label] in links" :key="id" :href="`/#${id}`" @click="open=false">{{label}} <span>↗</span></a><RouterLink to="/links" @click="open=false">Link na bio <span>↗</span></RouterLink></nav><button class="button full" @click="open=false;book()">Agendar meu momento</button></ModalShell></template>

@@ -1,0 +1,1 @@
+<template><main id="main-content" class="section wrap"><p class="eyebrow">Luiza Rais Nails / 404</p><h1>Este caminho<br>não foi encontrado.</h1><RouterLink class="button" to="/">Voltar ao início</RouterLink></main></template>
